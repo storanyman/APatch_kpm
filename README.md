@@ -2,31 +2,31 @@
 
 ```text
        /\_/\
-      ( •̀ ω •́ )   传统编程，很枯燥吧？
+      ( •̀ ω •́ )   Traditionell programmering är ganska tråkigt, eller hur?
        / >⌨️
 
-     ✨ 项目已蒸馏 ✨
-     想要什么，自己写。
+     ✨ Projektet är destillerat ✨
+     Vill du ha något, skriv det själv.
 ```
 
-## **项目许愿池**
+## **Projektets Önskebrunn**
 
-以前是「想要什么，自己写」，现在是「想要什么，自己写」。你负责提需求，AI 负责敲键盘，测试机负责看它有没有吹牛。
+Förr var det "vill du ha något, skriv det själv", och nu är det "vill du ha något, skriv det själv". Du ansvarar för att ställa kraven, AI:n ansvarar för att skriva koden, och testmaskinen ansvarar för att se om den bara skryter.
 
-[`zram_zstd`](zram_zstd/README.md) 已经把这套流程跑了一遍：AI 开发、独立审计、实机测试，最后由维护者验收签名。一只负责写，一只负责挑刺，另一只上机验收。
+[`zram_zstd`](zram_zstd/README.md) har redan gått igenom den här processen: AI-utveckling, oberoende granskning, testning på riktig enhet, och slutligen godkännande och signering av underhållaren. En ansvarar för att skriva, en för att hitta fel och en annan för godkännande på enheten.
 
-## 许愿入口
+## Skapa en önskan
 
-把设备型号、Android／内核版本、APatch／KernelPatch 版本和想实现的功能告诉 AI，再说清楚怎样才算做成。然后让它按 [项目规则](AGENTS.md) 开工。
+Berätta för AI:n om din enhetsmodell, Android-/kärnversion, APatch-/KernelPatch-version och den funktion du vill implementera, och förklara vad som krävs för att det ska anses vara klart. Låt den sedan börja arbeta enligt [projektreglerna](AGENTS.md).
 
-愿望越具体，落地越快。至于「帮我写个万能模块」，建议先问问神灯还有没有上下文额度。
+Ju mer specifik önskan är, desto snabbare förverkligas den. När det gäller "hjälp mig att skriva en universell modul", föreslår jag att du först frågar den magiska lampan om den har någon kontextkvot kvar.
 
-## 拿来用
+## Användning
 
-这是个人使用的 APatch / KernelPatch 模块仓库。模块用法见各自目录的 README，现成产物见 [Releases](https://github.com/lzghzr/APatch_kpm/releases)，适配范围以对应说明和验证记录为准。
+Detta är ett arkiv för APatch-/KernelPatch-moduler för personligt bruk. För modulanvändning, se README i respektive katalog. För färdiga versioner, se [Releases](https://github.com/lzghzr/APatch_kpm/releases). Kompatibilitetsomfånget baseras på motsvarande instruktioner och verifieringsposter.
 
-遇到 BUG，请提供 boot.img 和 APatch 日志；公开前请移除设备序列号、密钥和本机路径。
+Om du stöter på en bugg, vänligen tillhandahåll boot.img och APatch-loggar; innan du publicerar dem, se till att ta bort enhetens serienummer, nycklar och lokala sökvägar.
 
-欢迎带着需求来许愿，也欢迎带着复现日志来拆台。详细流程见 [三方交付流程](docs/README.md)。
+Välkommen att komma med dina behov för att önska, och du är också välkommen att komma med reproduktionsloggar för att kritisera. För den detaljerade processen, se [Process för tredjepartsleverans](docs/README.md).
 
-### 所有模块均为个人使用，未对所有设备进行适配，因使用模块造成的任何损失，本人概不负责
+### Alla moduler är för personligt bruk och har inte anpassats för alla enheter. Jag ansvarar inte för några förluster orsakade av användningen av modulerna.
